@@ -1,5 +1,9 @@
-class AddTitleToMessages < ActiveRecord::Migration[5.0]
+class CreateMessages < ActiveRecord::Migration[5.0]
   def change
-    add_column :messages, :title, :string
+    create_table :messages do |t|
+      t.string :content
+
+      t.timestamps
+    end
   end
 end
