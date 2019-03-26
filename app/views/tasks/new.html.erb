@@ -1,6 +1,6 @@
 <h1>新規タスク登録ページ</h1>
 
-　<%= render 'form', message: @message %>
+　<%= render 'form', task: @task %>
  <%= form_for(@task) do |f| %>
  <%= f.label :content, 'タスク' %>
  <%= f.text_field :content %>
